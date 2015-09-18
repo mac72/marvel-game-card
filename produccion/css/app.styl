@@ -1,0 +1,45 @@
+
+
+borde(color =red)
+	border 1px solid color
+	box-sizing border-box
+	
+//card	
+@import "styles.styl" 
+
+body
+	font-family Arial
+	font-size 16px
+	margin 0
+	
+@import "layout.styl"
+
+.Status 
+	background orange
+	&-player
+		background red
+		padding 0.5em
+		color white
+		margin 0
+	&-points
+		text-align center
+		padding 0.5em
+		margin 0
+
+.Phases 
+	background white
+	border 5px dashed red
+	position absolute
+	right 0
+	
+.Battle 
+	&-antagonist
+		display flex
+		justify-content space-between
+		> div
+			margin 10px
+	&-player
+		display flex
+		justify-content space-between
+		> div
+			margin 10px
